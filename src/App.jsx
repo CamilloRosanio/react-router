@@ -30,17 +30,17 @@ function App() {
           {/* LAYOUT (+OUTLET) */}
           <Route Component={DefaultLayout}>
 
-            {/* ROUTE (singole) */}
+            {/* ROUTE (dirette) */}
             <Route index Component={HomePage}></Route>
             <Route path="/about" Component={AboutPage}></Route>
 
             <Route path="*" Component={NotFoundPage}></Route>
 
             <Route path="/posts">
-              {/* NESTED ROUTE */}
+              {/* ROUTE (nested) */}
               <Route path="" Component={PostsIndexPage}></Route>
 
-              {/* NESTED ROUTE + PARAM */}
+              {/* ROUTE (nested + param) */}
               <Route path=":id" Component={PostsShowPage}></Route>
             </Route>
           </Route>

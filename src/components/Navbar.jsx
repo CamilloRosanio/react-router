@@ -7,10 +7,10 @@ import { NavLink } from "react-router";
 export default function Navbar() {
     return <>
         <nav className="debug">
-            <NavLink to="/" className="debug">Home</NavLink>
-            <NavLink to="/about" className="debug">About</NavLink>
+            <NavLink to="/" className="debug nav-link">Home</NavLink>
+            <NavLink to="/about" className="debug nav-link">About</NavLink>
 
-            <NavLink to="/posts" className="debug">Posts</NavLink>
+            <NavLink to="/posts" className="debug nav-link">Posts</NavLink>
         </nav>
     </>
 }

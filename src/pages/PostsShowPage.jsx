@@ -2,9 +2,11 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { NavLink } from "react-router";
 
 
 // ENV IMPORTS
+const domainUrl = import.meta.env.VITE_DOMAINURL;
 const apiUrlRoot = import.meta.env.VITE_APIURL;
 const apiSubPath = import.meta.env.VITE_SUBPATH;
 
@@ -43,5 +45,8 @@ export default function PostsShowPage() {
     return <>
         <h1 className="debug">Post Detail</h1>
         <p className="debug">{Feed.title}</p>
+        <NavLink to={domainUrl + apiSubPath}>
+            <button>Back to List</button>
+        </NavLink>
     </>
 }
