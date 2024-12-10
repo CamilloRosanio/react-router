@@ -18,7 +18,7 @@ export default function DefaultLayout() {
             <Outlet />
         </main>
 
-        <footer>
+        <footer className="debug">
             Footer
         </footer>
     </>
