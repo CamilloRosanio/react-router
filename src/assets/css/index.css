@@ -9,7 +9,19 @@
 
   list-style: none;
 
+  text-decoration: none;
+
   font-family: "Roboto", sans-serif;
+}
+
+
+/******************************************
+# GENERAL
+/******************************************/
+
+.activeLink {
+  font-weight: bold;
+  color: blue;
 }
 
 

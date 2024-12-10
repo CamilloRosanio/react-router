@@ -42,7 +42,7 @@ export default function PostsIndexPage() {
         <ul>
             {Feed.map((post, index) => (
                 <li key={post.id} className="debug">
-                    <Link to={post.id}><p>{index + ' ' + post.title}</p></Link>
+                    <Link to={'/' + apiSubPath + post.id}><p>{'Index: ' + index + ' / ' + post.title}</p></Link>
                 </li>
             ))}
         </ul>
