@@ -17,7 +17,6 @@ export default function PostsShowPage() {
 
     // RICEZIONE PARAMS
     const params = useParams();
-    console.log(apiUrlRoot + apiSubPath + params.id);
 
     // INIT USE-STATE SETTING
     const [Feed, setFeed] = useState([]);
@@ -43,7 +42,7 @@ export default function PostsShowPage() {
     }, []);
 
     return <>
-        <h1 className="debug">Post Detail</h1>
+        <h1 className="debug">{'Post Detail: ' + Feed.title}</h1>
         <p className="debug">{Feed.title}</p>
         <NavLink to={domainUrl + apiSubPath}>
             <button>Back to List</button>
